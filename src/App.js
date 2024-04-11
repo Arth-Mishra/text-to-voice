@@ -1,4 +1,5 @@
 import './App.css';
+import AudioPlayer from './component/play';
 // import SpeechRecognitionComponent from './SpeechRecognitionComponent';
 import Speach from './component/speach';
 import SpeechToText from './component/text';
@@ -8,7 +9,8 @@ function App() {
   return (
     // <SpeechRecognitionComponent/>
     // <Speach/>
-    <SpeechToText/>
+    // <SpeechToText/>
+    <AudioPlayer/>
     // <TextToSpeech/>
   );
 }
