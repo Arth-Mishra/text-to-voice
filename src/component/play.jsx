@@ -5,7 +5,7 @@ const AudioPlayer = () => {
   const [userInput, setUserInput] = useState("");
   const audioRef = useRef(null);
   useEffect(()=>{
-    setAudioUrl("");
+    setAudioUrl(""); 
   },[userInput]);
 
   const fetchAudio = async () => {
