@@ -1,9 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const AudioPlayer = () => {
   const [audioUrl, setAudioUrl] = useState("");
   const [userInput, setUserInput] = useState("");
   const audioRef = useRef(null);
+  useEffect(()=>{
+    setAudioUrl("");
+  },[userInput]);
 
   const fetchAudio = async () => {
     try {
