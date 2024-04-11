@@ -21,6 +21,7 @@ const AudioPlayer = () => {
           }),
         }
       );
+      setUserInput("");
       const audioBlob = await response.blob();
       const url = URL.createObjectURL(audioBlob);
       setAudioUrl(url);
